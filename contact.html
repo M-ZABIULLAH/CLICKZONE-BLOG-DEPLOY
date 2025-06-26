@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Blog - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo CLICKZONE.png" alt="Logo de Site">
+            <h1>CLICKZONE-BLOG</h1>
+            <p>Design UI - Design Graphique - Développement Web</p>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="article1.html">Articles</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="container">
+        <main>
+            <article class="blog-post">
+                <h2>Contact</h2>
+                <p>Vous avez des questions ou des suggestions ? N'hésitez pas à me contacter en utilisant le formulaire ci-dessous.</p>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Envoyer</button>
+                </form>
+                <div id="form-response" class="form-response"></div>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <h3>Coordonnées</h3>
+            <p><strong>Email:</strong> contact@clickzone.com</p>
+            <p><strong>Adresse:</strong> Valenciennes 59300</p>
+            
+            <h3>Articles récents</h3>
+            <ul>
+                <li><a href="article1.html">The Role of Artificial Intelligence in Web Development</a></li>
+                <li><a href="article2.html">Deuxième article de blog</a></li>
+                <li><a href="#">Troisième article de blog</a></li>
+                <li><a href="#">Quatrième article de blog</a></li>
+                <li><a href="#">Cinquième article de blog</a></li>
+            </ul>
+            
+            <h3>Suivez-moi</h3>
+            <div class="social-links">
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="https://www.linkedin.com/in/M-ZABIULLAH/" class="social-icon">LinkedIn</a>
+                <a href="https://github.com/M-ZABIULLAH" class="social-icon">GitHub</a>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="container">
+            <p>Tous droits réservés &copy Clickzone.fr <span id="year"></span></p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
