@@ -1,0 +1,18 @@
+name: CI for Static Site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check required files
+        run: |
+          test -f index.html || (echo "index.html is missing!" && exit 1)
+          test -f styles.css || (echo "styles.css is missing!" && exit 1)
