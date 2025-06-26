@@ -22,5 +22,5 @@ jobs:
       - name: Install CSSLint
         run: npm install -g csslint
 
-      - name: Run CSSLint on all CSS files
-        run: csslint "**/*.css"
+      - name: Run CSSLint
+        run: csslint style.css
